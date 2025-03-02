@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    text-align: center;
+    color: #ddd; /* Color de texto general */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Estilo del menú */
+.menu {
+    background-color: #ffffff;
+    padding: 10px 10; /* Ajusta el padding para controlar el fondo */
+    margin: 0 auto;
+    width: fit-content;
+    border: 20px;
+    border-radius: 20px;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* 🔹 Efecto al pasar el cursor */
+.menu ul li a:hover {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 🔹 Estilo para el encabezado */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #777777;
+}
+
+/* 🔹 Responsive: menú en columna en pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+button {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4d4d, #222);
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contenedor de productos con Flexbox */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los productos */
+    margin: 60px auto;
+    max-width: 900px;
+}
+
+/* Estilo individual de cada producto */
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #555;
+}
+
+.producto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.producto button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para los botones de paginación */
+#anterior, #siguiente {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#anterior:hover, #siguiente:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del carrito */
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    color: #0e0d0d;
+}
+
+#lista-carrito li {
+    background: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 5px auto;
+}
+
+#realizar-pedido {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#realizar-pedido:hover {
+    background-color: #c82333;
+}
+p{
+    margin: 10px;
+}

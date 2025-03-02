@@ -1,0 +1,192 @@
+body {
+    background-image: url(woodfield.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#login-container {
+    margin-top: 50px;
+}
+h1,h2{
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: #ffffff;
+    padding: 10px;;
+    padding: 10px 10;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.8; /* Ajusta el espacio entre líneas */
+
+}
+h3{
+    color: #ff0000;
+    padding: 10px;;
+   line-height: 1.8; /* Ajusta el espacio entre líneas */
+   text-align: center;
+   margin: 10px;
+}
+p span{
+    color: #f0ebeb;
+}
+p{
+    color: #050303;
+}
+#nombre-usuario, #carnet-usuario {
+    padding: 10px;
+    width: 220px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    background-position: center;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 220px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4d4d, #222);
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Estilo del menú */
+.menu {
+    background-color: #ffffff;
+    padding: 10px 10; /* Ajusta el padding para controlar el fondo */
+    margin: 0 auto;
+    width: fit-content;
+    border: 20px;
+    border-radius: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* 🔹 Efecto al pasar el cursor */
+.menu ul li a:hover {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 🔹 Estilo para el encabezado */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+/* Estilos generales del menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    
+    background-color: #ffffff;
+    display: flex;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    margin: 20px;
+}
+
+/* Estilos del submenú */
+.menu ul li .submenu {
+    display: none; /* Ocultar submenú por defecto */
+    position: absolute;
+    top: 100%; /* Posicionar debajo del enlace principal */
+    left: 0;
+    background-color: #ffffff;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.menu ul li .submenu li {
+    width: 100%;
+}
+
+.menu ul li .submenu li a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu ul li .submenu li a:hover {
+    background-color: #666;
+}
+
+/* Mostrar submenú al pasar el cursor */
+.menu ul li:hover .submenu {
+    display: block;
+}
+/* Estilos para la notificación */
+.notificacion {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+}

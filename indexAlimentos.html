@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos - Tienda Online</title>
+    <link rel="stylesheet" href="styleAlimentos.css">
+    <link rel="shortcut icon" href="shopping-cart.png">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="indexElectronico.html">🔌 Equipos Electrodomésticos</a></li>
+            <li><a href="indexPreguntas.html">❓ Atención al cliente</a></li>
+            <li><a href="indexAcercaTienda.html">📜 Acerca de la Tienda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>🛒 Productos Alimenticios</h1>
+        <p>Elige los alimentos que desees y agrégalos a tu carrito.</p>
+        <div id="productos"></div>
+        <div class="navegacion-paginas">
+            <button id="anterior" style="display: none;">⬅ Anterior</button>
+            <button id="siguiente">Siguiente ➡</button>
+        </div>
+    </main>
+<!-- Servicio a domicilio -->
+<label>
+    <input type="checkbox" id="servicio-domicilio">🚚 Servicio a Domicilio Disponibles
+</label>
+
+<!-- Datos de envío -->
+<div id="datos-envio" style="display: none;">
+    <label for="direccion-seleccion">Seleccione una dirección:</label>
+    <select id="direccion-seleccion">
+        <option value="0">Seleccione una opción</option>
+        <option value="Sueño">📍Sueño - $150</option>
+        <option value="Plaza de Marte">📍Plaza de Marte - $200</option>
+        <option value="Quintero">📍Quintero - $250</option>
+        <option value="Rajayoja">📍Rajayoja - $350</option>
+        <option value="Alameda">📍Alameda - $350</option>
+        <option value="Santa Bárbara">📍Santa Bárbara - $250</option>
+        <option value="Micro 9">📍Micro 9 - $350</option>
+        <option value="Vista Alegre">📍Vista Alegre - $300</option>
+        <option value="Centro de la ciudad">📍Centro de la ciudad - $300</option>
+        <option value="Trocha">📍Trocha - $350</option>
+    </select>
+
+    <!-- Dirección exacta -->
+    <input type="text" id="direccion" placeholder="Ingrese su dirección exacta">
+    <input type="text" id="numero-telefono" placeholder="Ingrese su número de teléfono">
+</div>
+
+
+
+
+    <!-- Carrito de Compras -->
+    <aside id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <h2 id="total-carrito">Total: $0.00</h2>
+
+        
+
+        <button id="realizar-pedido">Realizar Pedido</button>
+    </aside>
+
+    <script src="code-Alimento.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    text-align: center;
+    color: #ddd; /* Color de texto general */
+}
+
+/* 🔹 Estilo del menú */
+.menu {
+    background-color: #ffffff;
+    padding: 10px 10; /* Ajusta el padding para controlar el fondo */
+    margin: 0 auto;
+    width: fit-content;
+    border: 20px;
+    border-radius: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* 🔹 Efecto al pasar el cursor */
+.menu ul li a:hover {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 🔹 Estilo para el encabezado */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pregunta-container {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.respuesta {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.responder-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.responder-form textarea {
+    width: 90%;
+    height: 60px;
+}
+
+.responder-form button {
+    background-color: #007bff;
+}

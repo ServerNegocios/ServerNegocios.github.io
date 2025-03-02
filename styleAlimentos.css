@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    text-align: center;
+    color: #ddd; /* Color de texto general */
+}
+
+.hidden {
+    display: none;
+}
+
+#login-container {
+    margin-top: 50px;
+}
+
+h2 {
+    color: #050303;
+}
+h3{
+
+    margin: 20px;
+}
+h5,h1{
+    color: #ffffff;
+}
+p span{
+    color: #f0ebeb;
+}
+p{
+    color: #777777;
+    margin: 10px;
+}
+#nombre-usuario, #carnet-usuario {
+    padding: 10px;
+    width: 220px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4d4d, #222);
+}
+
+/* Contenedor de productos: Flexbox para alinear en fila */
+#productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos pasen a la siguiente línea si no caben */
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px; /* Espaciado entre productos */
+}
+
+/* Estilo para cada producto */
+#productos div {
+    margin-bottom: 20px; /* Espaciado entre filas */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    color: black; /* Color de texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras */
+    width: 200px; /* Ajuste de ancho */
+    text-align: center; /* Centrar texto */
+    position: relative;
+}
+
+/* Estilos de imagen */
+.producto img {
+    width: 150px; /* Tamaño fijo */
+    height: 150px; /* Mantiene proporción cuadrada */
+    object-fit: cover; /* Ajuste sin deformar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+#carrito {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito{
+    color: #050303;
+}
+
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    padding: 5px;
+    border-bottom: 1px solid #bbb;
+}
+
+#btn-salir {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+#btn-salir:hover {
+    background-color: #c82333;
+}
+
+/* Estilo para el input de dirección cuando el checkbox está activado */
+#servicio-domicilio:checked ~ #direccion {
+    border: 2px solid #e70606;
+    background-color: #fff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Estilo del menú */
+.menu {
+    background-color: #ffffff;
+    padding: 10px 10; /* Ajusta el padding para controlar el fondo */
+    margin: 0 auto;
+    width: fit-content;
+    border: 20px;
+    border-radius: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* 🔹 Efecto al pasar el cursor */
+.menu ul li a:hover {
+    background: linear-gradient(to right, #e70606, #0e0d0d);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 🔹 Estilo para el encabezado */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}

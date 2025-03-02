@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrodomésticos - Tienda Online</title>
+    <link rel="stylesheet" href="styleElectronico.css">
+    <link rel="shortcut icon" href="shopping-cart.png">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="indexAlimentos.html">🍔 Alimentos</a></li>
+            <li><a href="indexPreguntas.html">❓ Atención al cliente</a></li>
+            <li><a href="indexAcercaTienda.html">📜 Acerca de la Tienda</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>🛒 Productos Electrodomésticos</h1>
+        <p>Elige los Electrodomésticos que desees y agrégalos a tu carrito.</p>
+    </header>
+
+    <!-- Contenedor de Productos -->
+    <div id="productos"></div>
+
+    <!-- Botones de Paginación -->
+    <button id="anterior" style="display: none;">⬅️ Anterior</button>
+    <button id="siguiente" style="display: none;">Siguiente ➡️</button>
+
+    <aside id="carrito">
+        <h2>🛍️Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <h2 id="total-carrito">Total: $0.00</h2>
+        <button id="realizar-pedido">📦Realizar Pedido</button>
+        
+    </aside>
+
+
+
+    
+    <script src="code-Electronico.js"></script>
+
+</body>
+</html>

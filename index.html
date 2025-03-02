@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encargos Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="shopping-cart.png">
+</head>
+<body>
+
+    <div id="login-container">
+        <h1>¡Bienvenido a Encargos Virtual!</h1>
+        <h3>Iniciar Sesión</h3>
+        <input type="text" id="nombre-usuario" placeholder="Ingrese su nombre">
+        <input type="text" id="carnet-usuario" placeholder="Ingrese su número de carnet">
+        <button id="btn-ingresar">Ingresar</button>
+    </div>
+
+    <div id="app" class="hidden">
+        <header>
+            <h2 style="color: rgb(255, 255, 255);">
+                Datos del Usuario: <span id="usuario-nombre"></span> (Carnet: <span id="usuario-carnet"></span>)
+            </h2>
+            <button id="btn-salir">Cerrar Sesión</button>
+        </header>
+              
+        <!-- Menú de Navegación -->
+        <nav class="menu">
+            <ul id="menu-lista">
+                <!-- El menú se llena dinámicamente en JavaScript -->
+            </ul>
+        </nav>
+    </div>
+    
+
+    <script src="code-1.js"></script>
+</body>
+</html>
